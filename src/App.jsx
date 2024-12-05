@@ -9,14 +9,13 @@ function App() {
   const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
-    // selectedButton => 'components', 'jsx', 'props', 'state'
     setSelectedTopic(selectedButton);
   }
 
   console.log("App component executing!");
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -68,7 +67,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
